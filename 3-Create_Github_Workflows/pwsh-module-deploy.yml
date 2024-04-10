@@ -29,7 +29,7 @@ jobs:
           $moduleManifestVersion = $moduleManifestData.ModuleVersion -as [System.Version]
           $psGalleryModule = Find-Module -Name $moduleName
           if ([System.Version]$psGalleryModule.Version -le [System.Version]$moduleManifestVersion.Version) {
-            throw "Version hasn't been updated.  Ensure version is h"
+            throw "Version hasn't been updated.  Ensure version isn't the same!"
           }
       
       - name: Extract Repo Name
