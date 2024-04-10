@@ -1,23 +1,28 @@
-# PowerShell Module Pipeline
+# Overview
+
+This is an opinionated approach to publishing a module to the PowerShell Gallery.
 
 ---
 
-## Prerequisites 
+## Pre-Reqs
 
-This assumes you have a PowerShell module already.
-Ideally it should have the structure we want for this particular CI/CD pipeline.
-The structure will keep function files as their own _*.ps1_ files separated by public and private use.
+1. This assumes you have a PowerShell module already.
+2. Ideally it should have the structure we want for this particular CI/CD pipeline.
+  a. Don't worry, we'll review the structure. 
+  b. The structure will keep function files as their own _*.ps1_ files separated by public and private use.
 
-We'll review the structure.
+If you have a flat module, the concepts here will still work, but your `Pester` tests will need to be updated.
 
 ---
 
-What we need:
+So what is in play for what we're about to see?
 
-1. A PowerShell Module with the Correct Structure
+1. A PowerShell Module
 2. A Git repository in **Github**
-3. Steps to take with `PSScriptAnalyzer` and `Pester` to validate our code
-4. Github actions to validate, and when ready, deploy our code to the PSGallery!
+3. A PowerShell Gallery account and API key
+4. Our code validation process!!!
+  a. We're all using `PSScriptAnalyzer` and `Pester`... Right???
+5. Github actions to validate, and when ready, deploy our code to the PSGallery!
 
 ---
 
