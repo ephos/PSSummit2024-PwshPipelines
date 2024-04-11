@@ -60,5 +60,5 @@ These don't need to go to the PSGallery.
 Push-Location ../PSSummitDemo/
 
 # Review our structure
-vim .
+nvim .
 ```
