@@ -2,6 +2,10 @@
 
 This is an opinionated approach to publishing a module to the PowerShell Gallery.
 
+This is intended to be a starting point, but you can go much farther with it.
+
+We are not tempting demo gods or conference WiFi in this session!
+
 ---
 
 ## Pre-Reqs
@@ -24,25 +28,12 @@ So what is in play for what we're about to see?
   a. We're all using `PSScriptAnalyzer` and `Pester` to validate our code, right?
 5. Github actions to validate, and when ready, deploy our code to the PSGallery!
 
+## Quick Note
+
+- This isn't going to be an in depth Github Actions workflow writing session.
+- This isn't going to be a PowerShell module creation session.
+
+We'll touch lightly on some of the topics, but out focus is the validation and deployment.
 
 
-
-## 5 - Updating Code and Deploying to PSGallery
-
-If you want you can likely remove the extra validation run.
-In this case the robots are running the validation workflow for me so I don't care how many times we clobber it.
-
-```bash
-vlc 5-feature_branch_deploy.mp4
-```
-
-## 6 - Mission Accomplished
-
-Note: It can take a few minutes for your module to show up in the PSGallery.  If you don't see it right away, don't worry!
-
-```powershell
-Find-Module -Name PSSummitDemo
-
-vlc 6-module_automatically_deployed.mp4
-```
 
